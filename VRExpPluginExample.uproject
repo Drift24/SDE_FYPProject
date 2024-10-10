@@ -105,6 +105,10 @@
 		{
 			"Name": "LiveLinkInputDevice",
 			"Enabled": true
+		},
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
