@@ -50,13 +50,21 @@ public:
 protected:
 	UPROPERTY(Config)
 	bool ThighTracking;
+	UPROPERTY(Config)
 	bool KneeTracking;
+	UPROPERTY(Config)
 	bool FootTracking;
+	UPROPERTY(Config)
 	bool ChestTracking;
+	UPROPERTY(Config)
 	bool WaistTracking;
+	UPROPERTY(Config)
 	FString DefaultIPAddress;
+	UPROPERTY(Config)
 	bool IsUsingDefaultIPAddress;
+	UPROPERTY(Config)
 	bool DebugConfiguration;
+	UPROPERTY(Config)
 	bool PlayerCanSeeThemselves;
 	
 
