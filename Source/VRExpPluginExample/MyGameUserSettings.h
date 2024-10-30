@@ -39,10 +39,17 @@ public:
 	FString GetDefaultIPAddress() const;
 
 	UFUNCTION(BlueprintPure)
-	bool GetIsUsingDefaultIPAddress() const;
+	bool GetPlayerCanSeeThemselves() const;
 
 	UFUNCTION(BlueprintPure)
-	bool GetPlayerCanSeeThemselves() const;
+	bool GetDebugConfigIsOn() const;
+
+	UFUNCTION(BlueprintPure)
+	bool GetScaledBodyTrackingIsOn() const;
+
+	UFUNCTION(BlueprintPure)
+	bool GetDpadMovementIsOn() const;
+
 
 	
 
@@ -61,11 +68,14 @@ protected:
 	UPROPERTY(Config)
 	FString DefaultIPAddress;
 	UPROPERTY(Config)
-	bool IsUsingDefaultIPAddress;
-	UPROPERTY(Config)
 	bool DebugConfiguration;
 	UPROPERTY(Config)
 	bool PlayerCanSeeThemselves;
+	UPROPERTY(Config)
+	bool ScaledBodyTracking;
+	UPROPERTY(Config)
+	bool DpadMovementIsOn;
+
 	
 	
 

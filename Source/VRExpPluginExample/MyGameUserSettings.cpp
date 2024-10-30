@@ -38,13 +38,21 @@ FString UMyGameUserSettings::GetDefaultIPAddress() const
 {
 	return DefaultIPAddress;
 }
-bool UMyGameUserSettings::GetIsUsingDefaultIPAddress() const
-{
-	return IsUsingDefaultIPAddress;
-}
 bool UMyGameUserSettings::GetPlayerCanSeeThemselves() const
 {
 	return PlayerCanSeeThemselves;
+}
+bool UMyGameUserSettings::GetDebugConfigIsOn() const
+{
+	return DebugConfiguration;
+}
+bool UMyGameUserSettings::GetScaledBodyTrackingIsOn() const
+{
+	return ScaledBodyTracking;
+}
+bool UMyGameUserSettings::GetDpadMovementIsOn() const
+{
+	return DpadMovementIsOn;
 }
 UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitializer) :Super(ObjectInitializer)
 {
@@ -54,8 +62,9 @@ UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitial
 	ChestTracking = bool(false);
 	WaistTracking = bool(false);
 	DefaultIPAddress = TEXT("192.168.50.4");
-	IsUsingDefaultIPAddress = bool(false);
-	DebugConfiguration = bool(true);
-	PlayerCanSeeThemselves = bool(true);
+	DebugConfiguration = bool(false);
+	PlayerCanSeeThemselves = bool(false);
+	ScaledBodyTracking = bool(false);
+	DpadMovementIsOn = bool(true);
 
 }
