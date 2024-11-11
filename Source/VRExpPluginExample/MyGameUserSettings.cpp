@@ -54,6 +54,14 @@ bool UMyGameUserSettings::GetDpadMovementIsOn() const
 {
 	return DpadMovementIsOn;
 }
+bool UMyGameUserSettings::GetSnapTurningIsOn() const
+{
+	return SnapTurningIsOn;
+}
+int32 UMyGameUserSettings::GetPlayerSpawnLocation() const
+{
+	return PlayerSpawnLocation;
+}
 UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitializer) :Super(ObjectInitializer)
 {
 	ThighTracking = bool(true);
@@ -66,5 +74,6 @@ UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitial
 	PlayerCanSeeThemselves = bool(false);
 	ScaledBodyTracking = bool(false);
 	DpadMovementIsOn = bool(true);
-
+	SnapTurningIsOn = bool(true);
+	PlayerSpawnLocation = int32(1);
 }
