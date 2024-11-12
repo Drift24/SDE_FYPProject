@@ -50,6 +50,11 @@ public:
 	UFUNCTION(BlueprintPure)
 	bool GetDpadMovementIsOn() const;
 
+	UFUNCTION(BlueprintPure)
+	bool GetSnapTurningIsOn() const;
+
+	UFUNCTION(BlueprintPure)
+	int32 GetPlayerSpawnLocation() const;
 
 	
 
@@ -75,6 +80,10 @@ protected:
 	bool ScaledBodyTracking;
 	UPROPERTY(Config)
 	bool DpadMovementIsOn;
+	UPROPERTY(Config)
+	bool SnapTurningIsOn;
+	UPROPERTY(Config)
+	int PlayerSpawnLocation;
 
 	
 	
