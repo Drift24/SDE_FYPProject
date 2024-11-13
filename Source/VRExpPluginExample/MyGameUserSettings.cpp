@@ -62,6 +62,10 @@ int32 UMyGameUserSettings::GetPlayerSpawnLocation() const
 {
 	return PlayerSpawnLocation;
 }
+bool UMyGameUserSettings::GetIsSpectatorModeOn() const
+{
+	return IsSpectatorModeOn;
+}
 UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitializer) :Super(ObjectInitializer)
 {
 	ThighTracking = bool(true);
@@ -76,4 +80,5 @@ UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitial
 	DpadMovementIsOn = bool(true);
 	SnapTurningIsOn = bool(true);
 	PlayerSpawnLocation = int32(1);
+	IsSpectatorModeOn = bool(false);
 }

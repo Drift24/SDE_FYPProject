@@ -56,6 +56,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	int32 GetPlayerSpawnLocation() const;
 
+	UFUNCTION(BlueprintPure)
+	bool GetIsSpectatorModeOn() const;
+
 	
 
 	
@@ -84,6 +87,9 @@ protected:
 	bool SnapTurningIsOn;
 	UPROPERTY(Config)
 	int PlayerSpawnLocation;
+	UPROPERTY(Config)
+	bool IsSpectatorModeOn;
+
 
 	
 	
