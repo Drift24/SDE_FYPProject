@@ -77,8 +77,8 @@ UMyGameUserSettings::UMyGameUserSettings(const FObjectInitializer& ObjectInitial
 	DebugConfiguration = bool(false);
 	PlayerCanSeeThemselves = bool(false);
 	ScaledBodyTracking = bool(false);
-	DpadMovementIsOn = bool(true);
-	SnapTurningIsOn = bool(true);
+	DpadMovementIsOn = bool(false);
+	SnapTurningIsOn = bool(false);
 	PlayerSpawnLocation = int32(1);
 	IsSpectatorModeOn = bool(false);
 }
